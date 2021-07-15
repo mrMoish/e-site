@@ -1,0 +1,117 @@
+
+body {
+  background-image: linear-gradient(145deg, rgb(255, 255, 255) 0%, rgb(220, 198, 183) 70%);
+  background-attachment: fixed;
+  font-family: "Helvetica";
+  margin: 1em 2em;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(36, 27, 15);
+}
+
+
+.main {
+  max-width: 650px;
+  margin: 3em auto;
+}
+
+
+.main * {
+
+  margin: 0 auto;
+}
+
+
+
+.main-photo {
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+}
+
+
+
+
+
+.insta-link h2 {
+  margin: 1em auto 2em;
+  font-weight: normal;
+}
+.insta-link h2:hover{
+  transform: scale(1.2);
+
+  text-shadow:  5px 5px 7px rgba(0,0,0,0.5);
+}
+
+
+.menu > * {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+
+  border: 0.1em solid rgb(36, 27, 15);
+  border-radius: 10px;
+  margin: 1em auto;
+  padding: 1em 2em;
+}
+
+.main-photo,
+.insta-link h2,
+.menu > *{
+  text-align: center;
+  transition: .2s;
+}
+.main-photo:hover,
+.menu > *:hover{
+  transform: scale(1.1);
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+}
+
+.menu > *:active {
+  color: #aaa;
+}
+
+.menu div {
+  text-align: justify;
+  max-width: 550px;
+  overflow: hidden;
+  transition: 1s;
+  height: 0;
+}
+@media (max-width:477px) {
+  .menu div {
+    text-align: left;
+  }
+}
+
+.menu .hidden {
+  /* display: none; */
+  opacity: 0;
+  padding: 0;
+}
+
+.show {
+  opacity: 1;
+  padding: 50px 0;
+}
+
+/* особености показа  */
+
+.main h4 {
+  margin-top: 20px;
+}
+
+.main .indirim {
+  color: #A52A2A;
+}
+
+.main .more{
+  color: grey;
+}

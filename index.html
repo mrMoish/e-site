@@ -1,0 +1,83 @@
+<!--
+TODO:
+- scrollTo
+- on mobile versioin не уберается :hover после второго нажатия и скрытия
+- при раскрытие доп инфы нужно что бы применялис свойства hover
+- lock to copy text
+ -->
+
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="style.css">
+    <title> @lovenglish_4u | ENGLISH </title>
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
+  <body>
+
+    <main class="main">
+
+      <a class="insta-link" href="https://www.instagram.com/lovenglish_4u/" target="_blank">
+
+        <img class="main-photo" src="main-photo.jpg" alt="Фото преподавателя английского языка">
+        <h2>  @lovenglish_4u  </h2>
+
+      </a>
+
+      <div class="menu">
+
+        <a href="http://t.me/mrmoish" target="_blank"> Записаться на пробный урок </a>
+
+        <button onclick='open_button(this)'>
+          Узнать подробнее обо мне и обучении
+
+          <div class='hidden'>
+            Всем привет! Я Альбина, учитель английского с высшим образованием и с международным сертификатом.
+            Преподаю английский язык  уже более 5 лет, включая опыт работы в школах за границей.
+            Мы с тобой в классе будем именно <strong>очень много будем говорить!</strong>
+            То есть упор на speaking на основании полезного и нескучного материала для разговорного английского,
+            который я успешно использую уже давно, плюс адаптирую его в зависимости от потребностей каждого отдельного студента.
+            Я сама практиковала язык с носителями и именно в языковой среде, именно поэтому мы с Вами будем практиковать только нужный английский.
+            И да, у меня для вас хорошая новость - <strong class='indirim'>первый пробный урок бесплатно!</strong>
+            Пиши мне сообщение и как говорится <strong> «see for yourself» </strong> - лично посмотри как у нас проходят уроки!
+          </div>
+
+         </button>
+
+
+        <button onclick='open_button(this)'>
+           Стоимость  занятий
+           <div class='hidden'>
+             <h3>Формат уроков</h3>
+
+             <h4>Индивидуальные занятия:</h4>
+             Выбираете удобное для Вас  время и день.<br>
+             Занятия проходят по Зуму.<br>
+             Плюс, я всегда на связи со студентами - любые вопросы 24/7.<br><br>
+
+             Есть два вида классов, разница в продолжительности<br>
+             <ul>
+               <li>30 минут - $11</li>
+               <li>50 минут- $ 15</li>
+             </ul>
+             <span class='more'> Уровень минимум А2 желательно должен быть. </span>
+
+             <h4 class='indirim'>Специальные  предложения:</h4>
+             <ul class='indirim'>
+               <li>абонемент на 10 уроков  по 50 мин с - $13 вместо $15</li>
+               <li>абонемент на 10 уроков по 30 минут $9 вместо $11</li>
+             </ul>
+            <p class='more'> Оплата в долларах или рублях. </p>
+          </div>
+        </button>
+
+      </div>
+
+    </main>
+
+  </body>
+</html>
